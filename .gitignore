@@ -1,0 +1,13 @@
+db/
+test/db/
+test/src/db/
+*.wt
+*.turtle
+*.lock
+journal/
+WiredTiger*
+storage.bson
+diagnostic.data/
+node_modules/
+__pycache__/
+.env

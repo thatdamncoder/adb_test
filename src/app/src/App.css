@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  min-height: 100vh;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 20px;
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34; 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.mainTitle {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1a1a1a; 
+  margin-bottom: 40px;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+
+.sectionTitle {
+  font-size: 40px;
+  font-weight: 700;
+  color: #1a1a1a; 
+  margin-bottom: 32px;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+
+.todoList {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.todoList::-webkit-scrollbar {
+  width: 6px;
+}
+
+.todoList::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.todoList::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3); 
+  border-radius: 3px;
+}
+
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 32px;
+  background: #ffffff;
+  border: 1px solid #1a1a1a; 
+  border-radius: 24px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  min-height: 80px;
+}
+
+.todoText {
+  font-size: 20px;
+  color: #1a1a1a; 
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.4;
+}
+
+
+/* Input Section */
+.inputContainer {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.inputLabel {
+  font-size: 18px;
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.input {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 20px;
+  border: 2px solid #1a1a1a; 
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  color: #1a1a1a;
+  background: #ffffff; 
+  transition: all 0.3s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #555555; 
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.input::placeholder {
+  color: #999999;
+}
+
+.addBtn {
+  padding: 12px 32px;
+  border: 2px solid #1a1a1a; 
+  border-radius: 8px;
+  background: transparent;
+  color: #1a1a1a; 
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.addBtn:hover {
+  background: #1a1a1a; 
+  color: #ffffff; 
+}
+
+.addBtn:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 480px) {
+  .App { 
+    padding: 24px 16px;
+  }
+}
